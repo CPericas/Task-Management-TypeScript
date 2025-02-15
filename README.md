@@ -1,50 +1,11 @@
-# React + TypeScript + Vite
+A magical Task Management Application using Vite + React + TypeScript!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Logging in, authentication and authorization is handled with Auth0 for a safe and secure App experience.
 
-Currently, two official plugins are available:
+After Logging in you are greeted with a beautifully elegant Task Dashboard designed with Bootstrap. 
+Along with displaying your tasks with their ID, Title, Description, Start date, End date, Urgency, and Completion Status, you also have the options to edit, delete, or mark complete your tasks through buttons 
+  with Bootstrap styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The NavBar adapts to screen size to ensure a simple to navigate design regardless of device being used.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Creating tasks is simple and streamlined on an elegant and easy to follow Bootstrap Form. 
