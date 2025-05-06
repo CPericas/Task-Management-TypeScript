@@ -1,50 +1,66 @@
-Task Management App
-Overview
-This is a React-based Task Management application that allows authenticated users to:
+# 📋 Task Management App
+A simple and responsive React-based task management application that allows authenticated users to manage their tasks efficiently.
 
-View task details
+## 🚀 Features
+✅ Authentication
 
-Edit task details (title, description, etc.)
+Secure login using Auth0
 
-Mark tasks as completed or incomplete
+Only authenticated users can manage tasks
+
+## ✅ Task Management
+
+View task details (title, description, start date, end date, urgency, status)
+
+Create new tasks
+
+Edit task information
+
+Mark tasks as completed or pending
 
 Delete tasks
 
-Sign in securely using Auth0 for user authentication
+## ✅ Responsive UI
 
-The app is built using React, React-Bootstrap, Auth0 for authentication, and the React Context API for global state management.
+Built with React-Bootstrap for mobile-friendly design
 
-Features
-Authentication: Secure user login using Auth0.
+## ✅ State Management
 
-Task Management:
+Uses React Context API for managing global task state
 
-View task details, including title, description, start date, and urgency.
+## 🛠️ Tech Stack
+React – Front-end UI library
 
-Edit task details (title, description, start date, and urgency).
+TypeScript – Static typing for better reliability
 
-Toggle task completion (mark as complete or undo completion).
+React-Bootstrap – Pre-styled responsive UI components
 
-Delete tasks from the list.
+React Context API – Global state management
 
-Responsive UI: Built with React-Bootstrap for responsive UI components.
+Auth0 – Secure authentication and user management
 
-State Management: Manage tasks using React Context for a global state.
+# 🔍 How It Works
+## 1. Authentication
+Users sign in using Auth0. Only authenticated users can access the dashboard and perform task operations.
 
-Technologies Used
-React: JavaScript library for building user interfaces.
+## 2. Task Context
+The TaskContext provides shared state and task operations:
 
-React-Bootstrap: Bootstrap components for React.
+addTask()
 
-React Context API: For global state management of tasks.
+editTask()
 
-Auth0: Authentication and authorization service for secure user login.
+deleteTask()
 
-TypeScript: For type safety and better development experience.
+toggleTaskCompletion()
 
-How it Works
-Authentication: The app uses Auth0 to handle user authentication. Upon successful login, users can view and manage their tasks.
+These are made globally available through the TaskProvider.
 
-Task Context: The TaskContext holds the application’s task data and provides functions to add, edit, delete, and toggle task completion. This context is provided globally through the TaskProvider component.
+## 3. User Flow
+Sign in with Auth0
 
-Task Management: The app displays tasks, allows users to edit task details, toggle completion, and delete tasks from the list.
+View and manage your tasks via the dashboard
+
+Use the task editor modals to add or update details
+
+Mark tasks as completed or delete them as needed
